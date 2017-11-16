@@ -11,6 +11,8 @@ html {
   align-items: center;
 }
 
+/*  header - START   */
+
 header {
   background-color: black;
 }
@@ -25,6 +27,8 @@ header img {
   padding-left: 0.5rem;
   padding-right: 1rem;
 }
+
+/*  banner - START   */
 
 .banner {
   display: flex;
@@ -64,6 +68,8 @@ header img {
   width: 20rem;
 }
 
+/*  navigation - START   */
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -82,6 +88,8 @@ header img {
   padding: 0.75rem 0;
   width: 100%;
 }
+
+/*  products - START   */
 
 .products {
   display: flex;
@@ -133,6 +141,7 @@ header img {
   height: 7rem;
   padding: 2rem;
   margin-bottom: 4rem;
+  width: 12rem;
 }
 
 .product-watch img {
@@ -148,6 +157,8 @@ h3 {
   padding-bottom: 0.5rem;
   text-align: center;
 }
+
+/*  info - START   */
 
 .info {
   display: flex;
@@ -172,6 +183,8 @@ h3 {
   color: black;
 }
 
+/*  footer - START   */
+
 footer {
   display: flex;
   align-items: center;
@@ -182,6 +195,8 @@ footer {
 .footer h3 {
   width:100%;
 }
+
+
 
 @media only screen and (min-width: 470px) and (max-width: 1024px) {
   .header h1 {
@@ -214,6 +229,10 @@ footer {
     width: 100%;
   }
 
+  .products {
+    justify-content: space-around;
+  }
+
   .product {
     width: 47%;
   }
@@ -242,6 +261,11 @@ footer {
     flex-shrink: 1;
   }
 
+  header {
+    width: 100%
+    border: 1px solid red;
+  }
+
   .header h2 {
     font-weight: bold;
     font-size: 0.77rem;
@@ -263,8 +287,13 @@ footer {
     width: 100%;
   }
 
+  .products {
+    justify-content: space-around;
+  }
+
   .product {
-    width: 100%;
+    width: 90%;
+
   }
 
   .navigation {
@@ -297,4 +326,35 @@ footer {
     display: none;
   }
 
+  .info {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .location, .hours {
+    width: 100%;
+  }
+
+  .location {
+    margin-bottom: 2rem;
+  }
+
+  .info h3 {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .info p {
+    color: black;
+  }
+
+  .footer {
+    width:100%;
+    text-align: center;
+  }
 }
